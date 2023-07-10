@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef/Admin Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleDashboard() {
+      // Show/hide the menu details section
+      var menuDetails = document.getElementById("menuDetails");
+      menuDetails.style.display = menuDetails.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white py-4 px-6 shadow">
+    <h1 class="text-2xl font-bold">Chef/Admin Website</h1>
+  </header>
+
+  <!-- Content --> 
+  <div class="grid grid-cols-2 gap-4 ">
+    <div class="bg-gray-200 p-4 col-span-1 w-1/4">
+      <main class="container mx-auto py-8">
+        <button class="bg-neutral-700 hover:bg-neutral-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">DASHBOARD</button>
+        &nbsp;&nbsp;  &nbsp;  &nbsp; 
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        <button class="bg-neutral-700 hover:bg-orange-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="toggleDashboard()">MENU&nbsp;LIST</button>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        <button class="bg-neutral-700 hover:bg-neutral-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">ORDER&nbsp;LIST</button>
+      </main>
+      
+    </div>
+
+    <div class="bg-gray-200 p-4">
+      <!-- Menu Details Section -->
+      <section id="menuDetails" style="display: none;">
+        <div class="bg-white p-6 rounded-lg">
+          <div class="mb-4">
+            <div class="mb-4">
+              <label class="block font-bold mb-1" for="menuPrice">Menu Name</label>
+              <input class="w-full border border-gray-300 rounded px-3 py-2" type="text" id="menuName" required>
+            </div>
+            <div class="mb-4">
+              <label class="block font-bold mb-1" for="menuPrice">Menu Price</label>
+              <input class="w-full border border-gray-300 rounded px-3 py-2" type="text" id="menuPrice" required>
+            </div>
+            <div class="mb-4">
+              <label class="block font-bold mb-1" for="menuCategory">Select Category</label>
+              <select class="w-full border border-gray-300 rounded px-3 py-2" id="menuCategory" required>
+                <option value="category1">Appetizers</option>
+                <option value="category2">Main Course</option>
+                <option value="category3">Desserts</option>
+                <option value="category4">Drinks</option>
+              </select>
+            </div>
+              <label class="block font-bold mb-1" for="menuImage">Menu Image</label>
+              <input class="w-full border border-gray-300 rounded px-3 py-2" type="file" id="menuImage" required>
+            </div>
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+              ADD MENU
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+
+</html>
