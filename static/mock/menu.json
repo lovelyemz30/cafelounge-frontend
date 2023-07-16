@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "name": "Figs with bacon & chile",
+        "description": "It's made with roasted fresh figs tossed in maple syrup, a touch of Cinnamon, Thyme, Garli, Balsamic vinegar and olive oil. IT'S SUPER FLAVORFUL!.",
+        "price": 150,
+        "status": "Live",
+        "image": "/image/appetizer1.jpg",
+        "created_by": "Jacklord Bongo",
+        "category": "Appetizer"
+    },
+    {
+        "id": 2,
+        "name": "Figs with bacon & chile",
+        "description": "It's made with roasted fresh figs tossed in maple syrup, a touch of Cinnamon, Thyme, Garli, Balsamic vinegar and olive oil. IT'S SUPER FLAVORFUL!.",
+        "price": 150,
+        "status": "Live",
+        "image": "/image/appetizer1.jpg",
+        "created_by": "Jacklord Bongo",
+        "category": "Appetizer"
+
+    },
+    {
+        "id": 3,
+        "name": "Phyllo Cup",
+        "description": "These light and flanky phyllo cups are crisp, buttery and can be filled with sweet or savory ingredient to make perfect finger.",
+        "price": 100,
+        "status": "Live",
+        "image": "/image/appetizer2.jpg",
+        "created_by": "Jacklord Bongo",
+        "category": "Appetizer"
+    },
+    {
+        "id": 4,
+        "name": "Al Lago wines",
+        "description": "Taste our premier vine and enjoy the views, fell in love with a breath taking places.",
+        "price": 100,
+        "status": "Live",
+        "image": "/image/appetizer3.jpg",
+        "created_by": "Jacklord Bongo",
+        "category": "Appetizer"
+    },
+    {
+        "id": 5,
+        "name": "Mushroom puff",
+        "description": "This crispy, bite size mushroom puffs are perfect snack or appetizer. The bites with gruyere and musterd are crowd pleasing appetizer perfect for parties nad holidays.",
+        "price": 150,
+        "status": "Live",
+        "image": "/image/appetizer4.jpg",
+        "created_by": "Jacklord Bongo",
+        "category": "Appetizer"
+    }
+]

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="image" href="/image/background.jpg">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Menu List</title>
+
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.3);
+            background-image: url("/image/background.jpg");
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topnav -->
+    <div class="h-24 w-full justify-between flex items-center px-12">
+        <img src="/image/logo.png" alt="" class="h-56 pt-5">
+        <div class="flex gap-5">
+            <div class="">
+                <img src="/image/Notif-removebg-preview.png" alt="" class="h-10">
+            </div>
+            <div class="">
+                <img src="/image/Untitled_design__8_-removebg-preview.png" alt="" class="h-10">
+            </div>
+        </div>
+    </div>
+
+    <div class="h-[calc(97vh-96px)] w-full gap-5 px-12 flex">
+        <!-- Sidenav -->
+        <div class="w-60 h-full flex justify-center items-center flex-col gap-16">
+            <a href="/dashboard.html" class="btn">Dashboard</a>
+            <a href="" class="btn active">Menu List</a>
+            <a href="" class="btn">Order List</a>
+        </div>
+
+        <div class="flex-1">
+            <div class="flex gap-2">
+                <a href="" class="btn active">Appetizers</a>
+                <a href="" class="btn">main course</a>
+                <a href="" class="btn">desserts</a>
+                <a href="" class="btn">drinks</a>
+                <div class="btn flex justify-between relative" data-toggle="dropdown">
+                    <span class="w-5"></span>
+                    <span class="pointer-events-none">live</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi
+                    bi-chevron-down" viewBox="0 0 16 16">
+                        <path class="w-5 fill-black" fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+
+                    <div id="dropdown" class="absolute hidden bg-slate-100/50 items-center w-full top-full left-0 flex-col">
+                        <a href="" class="hover:bg-orange-500 w-full text-center p-2">Live</a>
+                        <a href="" class="hover:bg-orange-500 w-full text-center p-2">Sold Out</a>
+                        <a href="" class="hover:bg-orange-500 w-full text-center p-2">Delisted</a>
+                    </div>
+                </div>
+                <div class="btn flex gap-2 addmenu-toggler">
+                    <svg width="24" height="24" class="inline-flex " fill="none" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.883 3.007 12 3a1 1 0 0 1 .993.883L13 4v7h7a1 1 0 0 1 .993.883L21 12a1 1 0 0 1-.883.993L20 13h-7v7a1 1 0 0 1-.883.993L12 21a1 1 0 0 1-.993-.883L11 20v-7H4a1 1 0 0 1-.993-.883L3 12a1 1 0 0 1 .883-.993L4 11h7V4a1 1 0 0 1 .883-.993L12 3l-.117.007Z"
+                            fill="#212121" />
+                    </svg>
+                    add menu
+                </div>
+            </div>
+            <div class="menulist">
+                <!-- Javascript ra ang magbutang sa content diri -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Menu Form -->
+    <div class="form-overlay hidden"></div>
+    <form action="" class="addmenu-form hidden">
+        <h1 class="text-3xl font-bold text-center">ADD MENU</h1>
+        <input type="text" placeholder="Menu Name">
+        <textarea name="Description" placeholder="Description" class="" cols="30" rows="5"></textarea>
+        <input type="text" placeholder="Price">
+        <select class="p-2 w-full items-start rounded-2xl border-none">
+            <option disabled selected>-Select Categories-</option>
+            <option value="appetizer">Appetizer</option>
+            <option value="main-course">Main Course</option>
+            <option value="dessert">Dessert</option>
+            <option value="drinks">Drinks</option>
+        </select>
+        <select class="p-2 w-full items-start rounded-2xl border-none">
+            <option disabled selected>-Status-</option>
+            <option value="Live">Live</option>
+            <option value="Sold Out">Sold Out</option>
+            <option value="Delisted">Delisted</option>
+        </select>
+        <input type="file" value="Choose File" placeholder="Choose file" class=" bg-white">
+
+        <input type="submit" value="add menu" class="btn bg-orange-500">
+    </form>
+
+    <script defer src="/js/menulist.js"></script>
+</body>
+
+</html>
