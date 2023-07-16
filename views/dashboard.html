@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="image" href="/image/background.jpg">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Dashbaord</title>
+
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.3);
+            background-image: url("/image/background.jpg");
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body>
+    <!-- Topnav -->
+    <div class="h-24 w-full justify-between flex items-center px-12">
+        <img src="/image/logo.png" alt="" class="h-56 pt-5">
+        <div class="flex gap-5">
+            <div class="">
+                <img src="/image/Notif-removebg-preview.png" alt="" class="h-10">
+            </div>
+            <div class="">
+                <img src="/image/Untitled_design__8_-removebg-preview.png" alt="" class="h-10">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="h-[calc(97vh-96px)] w-full gap-5 px-12 flex">
+        <!-- Sidenav -->
+        <div class="w-60 h-full flex justify-center items-center flex-col gap-16">
+            <a href="" class="btn active">Dashboard</a>
+            <a href="/menulist.html" class="btn">Menu List</a>
+            <a href="" class="btn">Order List</a>
+        </div>
+        
+
+        <div class="flex-1 dashboard">
+            <div class="dashboard-card">
+                <h1 class="title">Total Menu</h1>
+                <span class="text-8xl font-bold">15</span>
+                <a href="" class="text-xl underline">See more</a>
+            </div>
+            <div class="dashboard-card">
+                <h1 class="title">Total Pending</h1>
+                <span class="text-8xl font-bold">1</span>
+                <a href="" class="text-xl underline">See more</a>
+            </div>
+            <div class="dashboard-card">
+                <h1 class="title">Total Completed</h1>
+                <span class="text-8xl font-bold">1</span>
+                <a href="" class="text-xl underline">See more</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
